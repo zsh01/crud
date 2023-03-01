@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<body>
+
+<div class="">
+ <h1>Update employee information</h1>
+ <form action="/update/{{ employee.id }}" method="POST">
+    {% csrf_token %}
+        <div>
+            Employee Id: <br>
+            <p>{{ employee.id }}</p>
+        </div>
+        <div>
+            Id: <br>
+            <p><input type ="text" name= "eid" value={{ employee.eid }}></p>
+        </div>
+        <div>
+            Name: <br>
+            <p><input type ="text" name= "ename" value={{ employee.ename }}></p>
+        </div>
+        <div>
+            Email: <br>
+            <p><input type="email" name="eemail" value={{ employee.eemail }}></p>
+        </div>
+        <div>
+            Contact: <br>
+            <p><input type="text" name="econtact" value={{ employee.econtact }}></p>
+        </div>
+        <div>
+            <button type ="submit">Update Employee</button>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>

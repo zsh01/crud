@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<body>
+
+<div class="">
+ <h1>List of Emplohyees</h1>
+ <table>
+<thead>
+    <tr>
+        <th>Internal ID</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+    {%for employee in employees %}
+    <tr>
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.eid }}</td>
+        <td>{{ employee.eemail }}</td>
+        <td>{{ employee.ename }}</td>
+        <td>{{ employee.econtact }}</td>
+        <td bgcolor="#1608df"><a href='/edit/{{ employee.id }}'>Edit
+        | <a href='/delete/{{ employee.id }}'>Delete</td>
+    </tr>
+    {% endfor %}
+</tbody>
+ </table>
+ 
+ 
+ <br>
+ <br>
+ <button> <a href="/emp">Add New Record</a></button>
+ <!--<button class="button-22" role="button">Button 22</button> -->
+</div>
+
+</body>
+
+</html>

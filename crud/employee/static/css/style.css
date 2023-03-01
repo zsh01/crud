@@ -1,0 +1,80 @@
+body{
+    background: #ccc;
+    height: 100%;
+    margin: 25px 0;
+    padding-left: 300px;
+}
+
+table, th, td{
+    border: 1px solid rgb(238, 241, 241)
+}
+
+tr:hover{
+    background-color: rgb(179, 195, 245);
+}
+
+th{
+    background-color: #041daa;
+    color: white;
+}
+
+button{
+    border-radius: 12px;
+    color:#b1df08;
+    background-color: #1608df;
+    cursor:pointer;
+    
+}
+
+a:link {
+    color: white;
+  }
+  /* visited link */
+  a:visited {
+    color: #f5f7f8;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #8ebf42;
+  }
+  /* selected link */
+  a:active {
+    color: #800000;
+  }
+
+/* more complicated formatting */
+/*
+.button-22 {
+    align-items: center;
+    appearance: button;
+    background-color: #0276FF;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "RM Neue",sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-22:active {
+    background-color: #006AE8;
+  }
+  
+  .button-22:hover {
+    background-color: #1C84FF;
+  }
+*/
